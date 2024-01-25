@@ -10,7 +10,7 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
 `
-export const LoginImage = styled.img`
+export const RegisterImage = styled.img`
   height: 70%;
 `
 export const ContainerItems = styled.div`
@@ -39,7 +39,7 @@ export const ContainerItems = styled.div`
     line-height: 28px;
     color: #fff;
     text-align: center;
-    margin-top: 100px;
+    margin-top: 6px;
   }
 `
 export const Label = styled.p`
@@ -48,7 +48,7 @@ export const Label = styled.p`
   font-weight: 500;
   line-height: 14px;
   color: #fff;
-  margin: 28px 0px 5px 0px;
+  margin: 7px 0px 5px 0px;
 `
 export const Input = styled.input`
   width: 391.42px;
@@ -58,6 +58,7 @@ export const Input = styled.input`
   border-radius: 5px;
   border: ${ props => (props.error ? '2px solid #cc1717' : 'none')};
   padding-left: 10px;
+  margin-top: 10px;
 `
 
 export const Span = styled.p`
