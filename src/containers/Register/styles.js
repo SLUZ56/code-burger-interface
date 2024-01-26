@@ -24,7 +24,7 @@ export const ContainerItems = styled.div`
 
   img {
     height: 65px;
-    margin-top: 20px;
+    margin-top: -30px;
   }
 
   form {
@@ -39,7 +39,7 @@ export const ContainerItems = styled.div`
     line-height: 28px;
     color: #fff;
     text-align: center;
-    margin-top: 6px;
+    margin-top: 30px;
   }
 `
 export const Label = styled.p`
@@ -48,7 +48,8 @@ export const Label = styled.p`
   font-weight: 500;
   line-height: 14px;
   color: #fff;
-  margin: 7px 0px 5px 0px;
+  margin-top: ${ props => (props.error ? '12px' : '28px')};
+  margin-bottom: -7px;
 `
 export const Input = styled.input`
   width: 391.42px;
