@@ -5,6 +5,7 @@ import { yupResolver } from '@hookform/resolvers/yup'
 import * as Yup from "yup"
 import api from '../../services/api'
 
+import { useUser } from '../../hooks/UserContext'
 import Button from '../../components/Button'
 import LoginImg from '../../assets/login-img.svg'
 import Logo from '../../assets/logo.svg'
@@ -20,6 +21,9 @@ import {
 } from './styles'
 
 function Login() {
+  const users = useUser()
+
+  console.log(users)
   const schema = Yup.object().shape({
     email: Yup.string().email('Digite um e-mail válido').required('O e-mail é obrigatório'),
     password: Yup.string().required('A senha é obrigatória').min(6, 'A senha deve ter pelos menos 6 dígitos')
