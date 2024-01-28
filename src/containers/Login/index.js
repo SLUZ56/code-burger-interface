@@ -60,10 +60,10 @@ function Login() {
         <img src={Logo} alt="logo-code-burger" />
         <h1>Login</h1>
         <form noValidate onSubmit={handleSubmit(onSubmit)}>
-          <Label>Email</Label>
+          <Label htmlFor="email">Email</Label>
           <Input type="email" {...register('email')} error={errors.email?.message} />
           <ErrorMessage>{errors.email?.message}</ErrorMessage>
-          <Label>Senha</Label>
+          <Label htmlFor="password">Senha</Label>
           <Input type="password" {...register('password')} error={errors.password?.message}/>
           <ErrorMessage>{errors.password?.message}</ErrorMessage>
           <Button type="submit" style={{ marginTop: 45, marginBottom: 20 }}>Sign in</Button>
